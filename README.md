@@ -38,19 +38,20 @@ DevHeaven provides the following key features:
 ## Packages Used
 
 ### Dependencies:
-```json
-{
-  "@tanstack/react-query": "^5.62.7",
-  "axios": "^1.7.9",
-  "firebase": "^11.0.2",
-  "lodash": "^4.17.21",
-  "motion": "^11.13.5",
-  "react": "^18.3.1",
-  "react-dom": "^18.3.1",
-  "react-icons": "^5.4.0",
-  "react-loader-spinner": "^6.1.6",
-  "react-router": "^7.0.2",
-  "sweetalert2": "^11.14.5"
-}
+- `@tanstack/react-query`: "^5.62.7"
+- `axios`: "^1.7.9"
+- `firebase`: "^11.0.2"
+- `lodash`: "^4.17.21"
+- `motion`: "^11.13.5"
+- `react`: "^18.3.1"
+- `react-dom`: "^18.3.1"
+- `react-icons`: "^5.4.0"
+- `react-loader-spinner`: "^6.1.6"
+- `react-router`: "^7.0.2"
+- `sweetalert2`: "^11.14.5"
 
-Live Link :"https://gadget-heaven-2fcab.web.app"
+---
+
+## Live Link
+[DevHeaven Live Demo](https://gadget-heaven-2fcab.web.app)
+
