@@ -1,5 +1,8 @@
 # DevHeaven
 
+## Live Link
+[DevHeaven Live Demo](https://gadget-heaven-2fcab.web.app)
+
 ## Find Your Dream Job Now
 
 **DevHeaven** is a job-searching platform where users can easily apply for their dream jobs. If you are an HR professional, you can create a vacancy for your company. This user-friendly website is fully responsive and ensures a seamless experience across all devices.
@@ -35,6 +38,47 @@ DevHeaven provides the following key features:
 
 ---
 
+## How to Run Locally
+
+Follow these steps to set up and run the project on your local machine:
+
+1. **Clone the repository:**
+   ```bash
+   git clone "https://github.com/ABUNAYEM7/DevHeaver-client.git"
+   ```
+
+2. **Navigate to the project folder:**
+   ```bash
+   cd DevHeaven-client
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+4. **Set up your Firebase and API credentials:**
+
+   Create a `.env` file in the root directory of the project and add the following environment variables:
+   
+   - `VITE_apiKey=AIzaSyDuAh8BfKVv32rr8zJ2XFjPyYp6OFk_Frc`
+   - `VITE_authDomain=gadget-heaven-2fcab.firebaseapp.com`
+   - `VITE_projectId=gadget-heaven-2fcab`
+   - `VITE_storageBucket=gadget-heaven-2fcab.firebasestorage.app`
+   - `VITE_messagingSenderId=256672624674`
+   - `VITE_appId=1:256672624674:web:046a0034c374a30b485a7b`
+   - `VITE_API_URL=https://dev-heaven-server.vercel.app`
+
+5. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+6. **Open the browser** and go to:
+   ```
+
+
+
 ## Packages Used
 
 ### Dependencies:
@@ -52,6 +96,5 @@ DevHeaven provides the following key features:
 
 ---
 
-## Live Link
-[DevHeaven Live Demo](https://gadget-heaven-2fcab.web.app)
+
 

@@ -28,37 +28,29 @@ const Navbar = () => {
       });
   };
 
-
   const links = (
     <>
-        <li>
+      <li>
         <NavLink to={"/"}>Home</NavLink>
       </li>
       <li>
-        <details>
-          <summary>Jobs</summary>
-          <ul className="p-2 cursor-pointer z-[1]">
+        <NavLink  to={"/AllJobs"}>
+          All Jobs
+        </NavLink>
+      </li>
+      {user && (
+        <>
           <li>
-              <NavLink to={"/AllJobs"}>All Job</NavLink>
-            </li>
-            <li>
-              <NavLink to={"/Designer"}>UI/UX Designer</NavLink>
-            </li>
-            <li>
-              <NavLink to={"/Development"}>Development</NavLink>
-            </li>
-          </ul>
-        </details>
-      </li>
-      <li>
-        <NavLink to={"/AddNewJob"}>Add New Vacancy</NavLink>
-      </li>
-      <li>
-        <NavLink to={"/MyApplications"}>My Applications</NavLink>
-      </li>
-      <li>
-        <NavLink to={"/MyPostedJobs"}>My Post</NavLink>
-      </li>
+            <NavLink to={"/AddNewJob"}>Add New Vacancy</NavLink>
+          </li>
+          <li>
+            <NavLink to={"/MyApplications"}>My Applications</NavLink>
+          </li>
+          <li>
+            <NavLink to={"/MyPostedJobs"}>My Post</NavLink>
+          </li>
+        </>
+      )}
     </>
   );
   return (

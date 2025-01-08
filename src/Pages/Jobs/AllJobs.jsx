@@ -14,7 +14,7 @@ const AllJobs = () => {
   const { data, isLoading, isError, error } = useQuery({
     queryKey: ["jobs",search,sort,min,max],
     queryFn: () => {
-      return axios.get(`http://localhost:3000/jobs?search=${search}&sort=${sort}&min=${min}&max=${max}`, {
+      return axios.get(`${import.meta.env.VITE_API_URL}/jobs?search=${search}&sort=${sort}&min=${min}&max=${max}`, {
         withCredentials: true,
       });
     },
@@ -48,7 +48,6 @@ const AllJobs = () => {
   const maxHandler =debounce((e)=>setMax(e.target.value),800)
 
 
-  console.log(data)
   return (
     <div>
       <div className="space-y-3">

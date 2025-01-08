@@ -8,7 +8,7 @@ const Home = () => {
   const { data, isLoading, isError, error } = useQuery({
     queryKey: ["jobs"],
     queryFn: () => {
-      return axios.get(`http://localhost:3000/jobs?home=true`, {
+      return axios.get(`${import.meta.env.VITE_API_URL}/jobs?home=true`, {
         withCredentials: true,
       });
     },
@@ -33,7 +33,6 @@ const Home = () => {
   if (isError) {
     return <p>{error.message}</p>;
   }
-
   return (
     <div className="my-12 p-4">
       {/* job-container */}

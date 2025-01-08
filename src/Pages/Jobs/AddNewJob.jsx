@@ -213,6 +213,7 @@ const AddNewJob = () => {
             type="email"
             placeholder="HR Email"
             className="input input-bordered"
+            readOnly
             required
           />
         </div>
@@ -226,6 +227,7 @@ const AddNewJob = () => {
             type="text"
             placeholder="HR Name"
             className="input input-bordered"
+            readOnly
             required
           />
         </div>

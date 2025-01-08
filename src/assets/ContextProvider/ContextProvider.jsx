@@ -60,7 +60,7 @@ const ContextProvider = ({ children }) => {
       if (currentUser) {
         const user = { email: currentUser.email };
         axios
-          .post(`http://localhost:3000/jwt`, user, {
+          .post(`${import.meta.env.VITE_API_URL}/jwt`, user, {
             withCredentials: true,
           })
           .then((res) => {
@@ -69,7 +69,7 @@ const ContextProvider = ({ children }) => {
       } else {
         axios
           .post(
-            `http://localhost:3000/logout`,
+            `${import.meta.env.VITE_API_URL}/logout`,
             {},
             {
               withCredentials: true,

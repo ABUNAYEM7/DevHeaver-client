@@ -21,6 +21,7 @@ const MyPostedJobs = () => {
     },
   });
 
+  // DELETE-HANDLER
   const deleteHandler = (id) => {
     axiosInstance
       .delete(`/myPostedJob/${id}`)
